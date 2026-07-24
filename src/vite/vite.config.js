@@ -292,6 +292,13 @@ export default defineConfig({
     },
     define: {
         ...getClientEnvVariables(),
+        __SENTRY_DEBUG__: false,
+        __SENTRY_TRACING__: false,
+        __SENTRY_REPLAY__: false,
+        __SENTRY_EXCLUDE_REPLAY_WORKER__: true,
+        __RRWEB_EXCLUDE_CANVAS__: true,
+        __RRWEB_EXCLUDE_IFRAME__: true,
+        __RRWEB_EXCLUDE_SHADOW_DOM__: true,
     },
 
     build: {
